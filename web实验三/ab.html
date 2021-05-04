@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>这是一个考研表格</title>
+</head>
+<body text="#660099" bgcolor="#FFFFFF" >
+    <form name="form1" methob="post" action="">
+       <div  align="center">
+        <h1><font face="宋体" color="black">全国研究生入学统一考试报名表</h1>
+       </div>
+    <table align="center" border="1" width="60%" height="700" cellpadding="10" cellspacing="0" >
+        <tr>
+            <td >报考单位代码</td>
+                <td ><input type="number"/></td>
+            <td >考生姓名</td>
+                <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td  >出生日期</td>
+                <td><input type="date" /></td>
+            <td >民族</td>
+                <td><select name="select"><option>汉族</option><option>蒙族</option><option>满族</option></select></td>
+        </tr>
+        <tr>
+            <td>性别</td>
+                <td ><input type="radio" name="radiobotton" value="radiobbtton" checked/>男
+                    <input type="radio" name="radiobotton" value="radiobbtton" checked/>女</td>
+            <td >政治面貌</td>
+                    <td><select name="select"><option>党员</option><option>群众</option></select></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td >现在学习或工作单位</td>
+            
+            <td colspan="3"><input type="text" style="width:600px;height:20px;"></td>
+            
+                
+        </tr>
+     
+        <tr>
+            <td>联系电话</td>
+                <td><input type="number"></td>
+            <td>最后毕业年月</td>
+                <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td>何时何地受过何种奖项</td>
+                <td colspan="3"><input type="text" style="width:600px;height:20px;"></td>
+        </tr>
+        <tr>
+            <td>家庭成员</td>
+                <td colspan="3"><input type="text" style="width:600px;height:20px;"></td>
+        </tr>
+        <tr>
+            <td >自我总结</td>
+              
+                <td colspan="4">
+                    <textarea name="" id="" cols="60" rows="2">
+                    </textarea>              
+                </td>
+        <tr>
+            <td>上传近期照片</td>
+         
+                <td colspan="3"><body> <style>
+                    input{border:2px solid rgb(0, 0, 0);}
+                    .clear{clear:both;}
+                    .ehdel_upload_show input{float:left; margin-top:10px;}
+                    .ehdel_upload{float:left;margin-top:-20px; *margin-top:-40px; filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
+                    </style> <form method="post" action="" enctype="multipart/form-data">
+                    <div class="ehdel_upload_show">
+                    <input id="ehdel_upload_text" type="text" name="txt" />
+                    <input id="ehdel_upload_btn" type="image"  value="浏览" />
+                    </div>
+                    <div class="clear"></div>
+                    <input type="file" onchange="ehdel_upload_text.value=this.value" class="ehdel_upload" />
+                    </form>
+                </body>
+                </td>
+        </tr>
+        <tr>
+            <td align="right"><input type="submit" value="提交"/></td>
+            <td colspan="3"><input type="submit" value="重置"/></td>
+        </tr>
+    </table>
+    </form>
+    
+</body>
+</html>
